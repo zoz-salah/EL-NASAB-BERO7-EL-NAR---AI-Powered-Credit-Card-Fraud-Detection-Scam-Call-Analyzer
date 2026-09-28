@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EL NASAB BERO7 EL NAR — Fraud & Scam Detection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">EL NASAB BERO7 EL NAR</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#transaction">Transactions</a>
+    <a href="#number">Numbers</a>
+    <a href="#call">Calls</a>
+    <a href="#dashboard">Dashboard</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Catch the fraud<br>before it catches you.</h1>
+    <p>One system that reads your transactions, your caller ID, and the words
+    a scammer actually says — and tells you which ones to trust.</p>
+    <div class="hero-actions">
+      <a href="#transaction" class="btn btn-primary">Check a transaction</a>
+      <a href="#call" class="btn btn-ghost">Analyze a call</a>
+    </div>
+  </div>
+  <div class="hero-panel">
+    <div class="stat"><span class="stat-num">0.172%</span><span class="stat-label">fraud rate in training data</span></div>
+    <div class="stat"><span class="stat-num">577:1</span><span class="stat-label">genuine to fraud ratio</span></div>
+    <div class="stat"><span class="stat-num">&lt;20ms</span><span class="stat-label">scoring target per transaction</span></div>
+  </div>
+</section>
+
+<section id="transaction" class="module">
+  <h2>Transaction Checker</h2>
+  <p class="module-intro">Paste the 30 feature values from a transaction (Time, V1–V28, Amount) to get a fraud probability.</p>
+  <form id="transactionForm" class="grid-form"></form>
+  <button type="button" id="checkTransactionBtn" class="btn btn-primary">Check transaction</button>
+  <div id="transactionResult" class="result-box hidden"></div>
+</section>
+
+<section id="number" class="module module-alt">
+  <h2>Number Checker</h2>
+  <p class="module-intro">Enter a phone number to see if it's been reported as spam.</p>
+  <div class="inline-form">
+    <input type="text" id="phoneInput" placeholder="+20 100 000 0000">
+    <button type="button" id="checkNumberBtn" class="btn btn-primary">Check number</button>
+  </div>
+  <div id="numberResult" class="result-box hidden"></div>
+</section>
+
+<section id="call" class="module">
+  <h2>Call Analyzer</h2>
+  <p class="module-intro">Paste what the caller said. Add their number too for a combined verdict.</p>
+  <textarea id="callTranscript" rows="5" placeholder="e.g. I'm calling from your bank, I need your card number and OTP to verify your account..."></textarea>
+  <input type="text" id="callPhoneInput" placeholder="Caller's number (optional)">
+  <button type="button" id="analyzeCallBtn" class="btn btn-primary">Analyze call</button>
+  <div id="callResult" class="result-box hidden"></div>
+</section>
+
+<section id="dashboard" class="module module-alt">
+  <h2>Model Dashboard</h2>
+  <p class="module-intro">Performance of the trained XGBoost fraud model.</p>
+  <div class="dashboard-grid">
+    <div class="metric-card"><span class="metric-num">0.87+</span><span class="metric-label">Target AUC-PR</span></div>
+    <div class="metric-card"><span class="metric-num">3</span><span class="metric-label">Models compared</span></div>
+    <div class="metric-card"><span class="metric-num">SMOTE</span><span class="metric-label">Imbalance strategy</span></div>
+  </div>
+  <p class="dashboard-note">Full confusion matrix and feature importance are generated in notebooks/eda_and_training.ipynb after training.</p>
+</section>
+
+<footer>
+  <p>EL NASAB BERO7 EL NAR — built for fraud detection, not for actual criminals.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
