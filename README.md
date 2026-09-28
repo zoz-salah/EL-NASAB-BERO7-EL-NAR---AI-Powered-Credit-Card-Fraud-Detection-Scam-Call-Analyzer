@@ -17,7 +17,14 @@ The project is built with a **FastAPI backend** and a lightweight **HTML/CSS/Jav
 
 ### Main Application
 
-![El Nasab Bero7 El Nar Demo](screenshots/demo.png)
+<img width="1903" height="728" alt="image" src="https://github.com/user-attachments/assets/006f7ac8-635a-4081-baee-f2394891f726" />
+
+
+WATCH THE VIDEO OF LIVE DEMO HERE : https://drive.google.com/file/d/1pdXrQiDZ8mMqATpPReD_0D9SGpHkU9bb/view?usp=sharing
+
+<img width="1590" height="764" alt="Screenshot 2026-09-28 125746" src="https://github.com/user-attachments/assets/223a71c7-afa5-4997-9c4c-eaea4ec86175" />
+<img width="1554" height="786" alt="Screenshot 2026-09-28 125906" src="https://github.com/user-attachments/assets/55643b44-75c2-4486-a140-e7bfa59cadb1" />
+
 
 > The demo preview shows the main interface and the project's fraud detection, phone number checking, and scam call analysis features.
 
