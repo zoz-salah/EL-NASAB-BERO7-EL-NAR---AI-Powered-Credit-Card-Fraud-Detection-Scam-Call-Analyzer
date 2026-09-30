@@ -10,6 +10,7 @@ AI-powered credit card fraud detection and scam call analysis platform.
 3. **Scam Call Analyzer** — Analyzes call transcripts using keyword and contextual scoring, optionally combined with the phone number checker.
 
 The project is built with a **FastAPI backend** and a lightweight **HTML/CSS/JavaScript frontend**.
+BY THE HELP OF AI MODELS
 
 ---
 
